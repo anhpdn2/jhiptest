@@ -2,7 +2,7 @@
 version: '3.8'
 services:
   mockpro-app:
-    image: mockpro
+    image: java:8u111
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,api-docs
