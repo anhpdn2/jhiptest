@@ -1,0 +1,29 @@
+
+entity Book {
+	name String
+}
+
+entity Author {
+	name String
+}
+
+entity Customer {
+	name String
+}
+
+relationship ManyToMany {
+	Book{author(name)} to Author{book}
+}
+
+
+
+paginate Customer, Book with infinite-scroll
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
